@@ -197,10 +197,16 @@
 
   &__card {
     background-color: var(--color-white);
-    padding: 0 1.8rem 4rem 3rem;
-    font-size: 1.7rem;
+    padding: 0 1.5rem 4rem 3rem;
+    font-size: 1.6rem;
     border-radius: 5px;
-    width: 339px;
+    width: 350px;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 339px;
+      font-size: 1.7rem;
+      padding: 0 1.8rem 4rem 3rem;
+    }
 
     @media only screen and (max-width: $bp-medium) {
       padding: 0 35px 40px;
