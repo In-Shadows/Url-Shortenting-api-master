@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header__logo-container">
+        <img src="images/logo.svg" alt="logo" />
+      </div>
+
+      <div class="header__navigation__container">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list__item">
+              <a href="#" class="navigation__link">Features</a>
+            </li>
+            <li class="navigation__list__item">
+              <a href="#" class="navigation__link">Pricing</a>
+            </li>
+            <li class="navigation__list__item">
+              <a href="#" class="navigation__link">Resources</a>
+            </li>
+            <li class="navigation__list__item">
+              <a href="#" class="navigation__link">Login</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="btn btn--1">Sign Up</button>
+      </div>
+
+      <div class="mobile">
+        <div class="mobile__menu-icon-container">
+          <img
+            src="images/icon-hamburger.svg"
+            alt="icon-hamburger"
+            class="mobile__menu-icon"
+          />
+        </div>
+
+        <div class="mobile__navigation-container hidden">
+          <nav class="mobile__navigation">
+            <ul class="mobile__navigation__list">
+              <li class="mobile__navigation__list__item">
+                <a href="#" class="mobile__navigation__link">Features</a>
+              </li>
+              <li class="mobile__navigation__list__item">
+                <a href="#" class="mobile__navigation__link">Pricing</a>
+              </li>
+              <li class="mobile__navigation__list__item">
+                <a href="#" class="mobile__navigation__link">Resources</a>
+              </li>
+              <li class="mobile__navigation__list__item">
+                <a href="#" class="mobile__navigation__link">Login</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile__btn-container">
+            <button class="btn btn--5">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section container">
+        <div class="hero-section__description">
+          <h1 class="primary-heading">
+            More than just<br />
+            shorter links
+          </h1>
+          <p class="hero-section__text">
+            Build your brand’s recognition and get detailed<br
+              class="text-br"
+            />
+            insights on how your links are performing.
+          </p>
+          <button class="btn btn--2">Get Started</button>
+        </div>
+
+        <div class="hero-section__img-container"></div>
+      </section>
+
+      <section class="advanced">
+        <div class="container">
+          <div class="advanced__form-container">
+            <form class="form">
+              <input
+                type="text"
+                placeholder="Shorten a link here..."
+                class="form__input"
+              />
+              <div class="form__btn-container">
+                <button class="btn btn--3 form__btn">Shorten it!</button>
+              </div>
+              <p class="invalid-text hidden"></p>
+            </form>
+          </div>
+
+          <div class="advanced__links">
+            <!-- <div class="advanced__link">
+              <p class="advanced__link__full">https://frontendmentor.io</p>
+              <p class="advanced__link__short">https://rel.ink/gxOXp9</p>
+              <button class="btn btn--4 copy--btn">Copy</button>
+            </div>
+            -->
+          </div>
+
+          <div>
+            <h2 class="secondary-heading advanced__heading">
+              Advanced Statistics
+            </h2>
+            <p class="advanced__text">
+              Track how your links are performing across the web with<br
+                class="text-br"
+              />
+              our advanced statistics dashboard.
+            </p>
+
+            <div class="advanced__cards-container">
+              <figure class="advanced__card">
+                <div class="advanced__card__img">
+                  <img
+                    src="images/icon-brand-recognition.svg"
+                    alt="icon-brand-recognition"
+                  />
+                </div>
+                <figcaption class="advanced__card__caption">
+                  Brand Recognition
+                </figcaption>
+                <p class="advanced__card__text">
+                  Boost your brand recognition with each click. Generic links
+                  don’t mean a thing. Branded links help instil confidence in
+                  your content.
+                </p>
+              </figure>
+              <figure class="advanced__card">
+                <div class="advanced__card__img">
+                  <img
+                    src="images/icon-detailed-records.svg"
+                    alt="icon-detailed-records"
+                  />
+                </div>
+                <figcaption class="advanced__card__caption">
+                  Detailed Records
+                </figcaption>
+                <p class="advanced__card__text">
+                  Gain insights into who is clicking your links. Knowing when
+                  and where people engage with your content helps inform better
+                  decisions.
+                </p>
+              </figure>
+              <figure class="advanced__card">
+                <div class="advanced__card__img">
+                  <img
+                    src="images/icon-fully-customizable.svg"
+                    alt="icon-fully-customizable"
+                  />
+                </div>
+                <figcaption class="advanced__card__caption">
+                  Fully Customizable
+                </figcaption>
+                <p class="advanced__card__text">
+                  Improve brand awareness and content discoverability through
+                  customizable links, supercharging audience engagement.
+                </p>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="boost">
+        <h2 class="secondary-heading boost__heading">Boost your links today</h2>
+        <div class="boost__btn-container">
+          <button class="btn btn--2">Get Started</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="images/logo-white.svg" alt="logo" />
+      </div>
+
+      <div class="footer__navigation-container">
+        <div>
+          <p class="footer__navigation__heading">Features</p>
+          <nav class="footer__navigation">
+            <ul class="footer__navigation__list">
+              <li class="footer__navigation__list__item">Link Shortening</li>
+              <li class="footer__navigation__list__item">Branded Links</li>
+              <li class="footer__navigation__list__item">Analytics</li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__navigation__heading">Resources</p>
+          <nav class="footer__navigation">
+            <ul class="footer__navigation__list">
+              <li class="footer__navigation__list__item">Blog</li>
+              <li class="footer__navigation__list__item">Developers</li>
+              <li class="footer__navigation__list__item">Support</li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__navigation__heading">Company</p>
+          <nav class="footer__navigation">
+            <ul class="footer__navigation__list">
+              <li class="footer__navigation__list__item">About</li>
+              <li class="footer__navigation__list__item">Our Team</li>
+              <li class="footer__navigation__list__item">Careers</li>
+              <li class="footer__navigation__list__item">Contact</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="footer__social-links">
+        <img src="images/icon-facebook.svg" alt="icon-facebook" />
+        <img src="images/icon-twitter.svg" alt="icon-twitter" />
+        <img src="images/icon-pinterest.svg" alt="icon-pinterest" />
+        <img src="images/icon-instagram.svg" alt="icon-instagram" />
+      </div>
+    </footer>
+  </body>
+</html>
+<!-- 
+
+
+
+
+
+
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Your Name Here</a>.
+</div> -->

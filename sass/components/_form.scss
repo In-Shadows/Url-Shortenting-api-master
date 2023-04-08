@@ -1,0 +1,50 @@
+.form {
+  display: flex;
+  gap: 3rem;
+  position: relative;
+
+  @media only screen and (max-width: $bp-smaller) {
+    flex-direction: column;
+  }
+
+  &__input {
+    display: block;
+    height: 60px;
+    border: none;
+    outline: none;
+    padding: 1.5rem 3rem;
+    border-radius: 5px;
+    flex: 1;
+
+    &::placeholder {
+      color: var(--color-neutral-gray);
+    }
+  }
+
+  &__input.invalid {
+    outline: 3px solid var(--color-secondary-red);
+
+    &::placeholder {
+      color: rgba(#f46262, 0.5);
+    }
+  }
+
+  &__btn-container {
+    background-color: var(--color-white);
+    border-radius: 5px;
+
+    .btn {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .invalid-text {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    color: var(--color-secondary-red);
+    font-size: 1.4rem;
+    font-style: italic;
+  }
+}

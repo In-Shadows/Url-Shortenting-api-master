@@ -1,0 +1,83 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 4rem 3rem;
+
+  @media only screen and (max-width: $bp-large) {
+    justify-content: space-between;
+  }
+
+  &__logo-container {
+    margin-right: 5rem;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__navigation__container {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+    }
+  }
+}
+
+.navigation {
+  flex: 1;
+
+  &__list {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  &__list__item {
+    &:nth-child(3) {
+      margin-right: auto;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: var(--color-neutral-grayish-violet);
+    transition: all 0.3s;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: var(--color-neutral-very-dark-violet);
+  }
+
+  &__link:focus {
+    outline: none;
+  }
+}
+
+// Sticky navigation
+:root:has(.header.sticky) .hero-section {
+  margin-top: 15rem;
+}
+
+.header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  max-width: 100%;
+  width: 100%;
+  padding: 3rem 18rem;
+  z-index: 10;
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 3rem 4rem;
+  }
+}

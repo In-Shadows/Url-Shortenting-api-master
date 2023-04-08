@@ -1,0 +1,13 @@
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+section {
+  transition: transform 1s, opacity 1s;
+}
+
+.hidden {
+  display: none;
+}
+

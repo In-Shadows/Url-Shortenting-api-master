@@ -1,0 +1,51 @@
+// Global Reset
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 56.25%;
+  }
+}
+
+body {
+  overflow-x: hidden;
+
+  background-image: url("../images/illustration-working.svg");
+  background-repeat: no-repeat;
+  background-position-x: 113%;
+  background-position-y: 145px;
+
+  @media only screen and (max-width: $bp-largest) {
+    background-position-x: 150%;
+    background-position-y: 120px;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    background-position-x: calc(100% + 25rem);
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    background-size: 130%;
+    background-position-x: calc(100% + 20rem);
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    background-position-x: calc(100% + 17rem);
+  }
+}

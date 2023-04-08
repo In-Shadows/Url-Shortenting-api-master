@@ -1,0 +1,22 @@
+:root {
+  // Primary
+  --color-primary-cyan: #2acfcf;
+  --color-primary-dark-violet: #3b3054;
+
+  // Secondary
+  --color-secondary-red: #f46262;
+
+  // Neutral
+  --color-neutral-gray: #bfbfbf;
+  --color-neutral-grayish-violet: #9e9aa7;
+  --color-neutral-very-dark-blue: #35323e;
+  --color-neutral-very-dark-violet: #232127;
+  --color-white: #fff;
+}
+
+// Breakpoints
+$bp-largest: 78.125em; // 1250px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 46.875em; // 750px
+$bp-smaller: 37.5em; // 600px
+$bp-small: 28.125em; // 450px
